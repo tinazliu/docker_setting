@@ -1,0 +1,34 @@
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+  
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+  
+" Define bundles via Github repos
+Bundle 'rking/ag.vim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-airline/vim-airline'
+"Bundlr 'majutsushi/tagbar'
+Bundle 'scrooloose/syntastic'
+Bundle "scrooloose/nerdtree"
+"Bundle "Lokaltog/vim-easymotion"
+Bundle "tomasr/molokai"
+Bundle 'junegunn/vim-easy-align'
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/nerdcommenter'
+" Bundle 'guns/xterm-color-table.vim'
+Bundle 'vim-airline/vim-airline-themes'
+" Bundle 'vim-ctrlspace/vim-ctrlspace'
+  
+  if filereadable(expand("~/.vimrc.bundles.local"))
+    source ~/.vimrc.bundles.local
+  endif
+    
+ filetype on
