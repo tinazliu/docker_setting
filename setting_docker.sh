@@ -17,7 +17,7 @@ cp .bash_aliases ~/
 # add trashcan
 mkdir ~/Trash
 # setting vim_env
-sudo apt-get install vim vim-nox pylint git exuberant-ctags build-essential cmake python-dev libclang1 curl
+apt-get install vim vim-nox pylint git exuberant-ctags build-essential cmake python-dev libclang1 curl
 mkdir -p ~/.vim/autoload
 curl https://raw.githubusercontent.com/tpope/vim-pathogen/v2.3/autoload/pathogen.vim -o ~/.vim/autoload/pathogen.vim
 mkdir -p ~/.vim/bundlemkdir -p ~/.vim/autoload
